@@ -37,7 +37,7 @@ height: 100vh;
 width: 100vw;
 }
 
-/* ââ Progress bar ââ */
+/* ── Progress bar ── */
 #progress-bar {
 position: fixed; top: 0; left: 0; height: 4px;
 background: linear-gradient(90deg, var(--green), var(--iso-green-1));
@@ -45,7 +45,7 @@ z-index: 1000; transition: width 0.6s ease;
 box-shadow: 0 0 12px rgba(0,232,91,0.4);
 }
 
-/* ââ Controls ââ */
+/* ── Controls ── */
 #controls {
 position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
 display: flex; align-items: center; gap: 16px; z-index: 999;
@@ -68,7 +68,7 @@ color: var(--dark-grey); font-size: 13px; font-weight: 500;
 min-width: 60px; text-align: center;
 }
 
-/* ââ Slide container ââ */
+/* ── Slide container ── */
 #slideshow {
 width: 100vw; height: 100vh;
 position: relative; overflow: hidden;
@@ -93,7 +93,7 @@ pointer-events: auto;
 max-width: 960px; width: 100%; text-align: center;
 }
 
-/* ââ Animated elements ââ */
+/* ── Animated elements ── */
 .reveal {
 opacity: 0; transform: translateY(30px);
 transition: opacity 0.7s ease, transform 0.7s ease;
@@ -106,7 +106,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 .slide.active .reveal.d4 { transition-delay: 1.2s; }
 .slide.active .reveal.d5 { transition-delay: 1.5s; }
 
-/* ââ Typography ââ */
+/* ── Typography ── */
 .hero-title {
 font-size: 64px; font-weight: 700; line-height: 1.1;
 color: var(--white);
@@ -150,7 +150,7 @@ margin-top: 8px;
 .highlight-amber { color: var(--amber); font-weight: 600; }
 .highlight-red { color: var(--red); font-weight: 600; }
 
-/* ââ Stat cards ââ */
+/* ── Stat cards ── */
 .stats-row {
 display: flex; gap: 24px; justify-content: center;
 margin-top: 32px; flex-wrap: wrap;
@@ -163,7 +163,7 @@ border-radius: 16px; padding: 28px 36px;
 min-width: 180px; text-align: center;
 }
 
-/* ââ Port diagram ââ */
+/* ── Port diagram ── */
 .hub-container {
 position: relative; width: 420px; height: 420px;
 margin: 0 auto;
@@ -194,7 +194,7 @@ z-index: 2;
 
 @keyframes fadeInNode { to { opacity: 1; } }
 
-/* ââ Step cards ââ */
+/* ── Step cards ── */
 .steps-grid {
 display: flex; gap: 12px; justify-content: center;
 margin-top: 30px; flex-wrap: wrap;
@@ -221,7 +221,7 @@ margin-bottom: 4px;
 font-size: 11px; color: var(--dark-grey); line-height: 1.4;
 }
 
-/* ââ Comparison ââ */
+/* ── Comparison ── */
 .compare-row {
 display: flex; gap: 32px; justify-content: center; margin-top: 32px;
 }
@@ -255,7 +255,7 @@ font-size: 15px;
 .compare-label { color: var(--dark-grey); }
 .compare-value { font-weight: 600; }
 
-/* ââ Network/port grid ââ */
+/* ── Network/port grid ── */
 .network-grid {
 display: grid; grid-template-columns: repeat(3, 1fr);
 gap: 12px; margin-top: 20px; max-width: 900px; margin-left: auto; margin-right: auto;
@@ -275,7 +275,7 @@ font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 4px;
 font-size: 11px; color: var(--dark-grey); line-height: 1.45;
 }
 
-/* ââ Capability table ââ */
+/* ── Capability table ── */
 .cap-grid {
 display: grid; grid-template-columns: repeat(4, 1fr);
 gap: 14px; margin-top: 28px; max-width: 860px; margin-left: auto; margin-right: auto;
@@ -291,7 +291,7 @@ border-radius: 14px; padding: 20px; text-align: left;
 .cap-name { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
 .cap-desc { font-size: 11px; color: var(--dark-grey); line-height: 1.5; }
 
-/* ââ Glossary ââ */
+/* ── Glossary ── */
 .glossary-grid {
 display: grid; grid-template-columns: repeat(2, 1fr);
 gap: 12px; margin-top: 24px; max-width: 740px; margin-left: auto; margin-right: auto;
@@ -307,7 +307,7 @@ border-radius: 10px; padding: 14px 18px;
 .glossary-term { font-size: 14px; font-weight: 700; color: var(--green); }
 .glossary-def { font-size: 12px; color: var(--dark-grey); margin-top: 2px; line-height: 1.4; }
 
-/* ââ Qargo badge ââ */
+/* ── Qargo badge ── */
 .qargo-badge {
 display: inline-block;
 background: linear-gradient(135deg, var(--green), var(--iso-green-2));
@@ -316,7 +316,7 @@ font-weight: 600; font-size: 14px;
 color: var(--navy);
 }
 
-/* ââ Highlight callout ââ */
+/* ── Highlight callout ── */
 .callout-green {
 background: rgba(0,232,91,0.08);
 border: 1px solid rgba(0,232,91,0.2);
@@ -329,7 +329,7 @@ display: inline-block;
 font-size: 15px; color: var(--green); font-weight: 600;
 }
 
-/* ââ Pulse animation ââ */
+/* ── Pulse animation ── */
 @keyframes pulse {
 0%, 100% { box-shadow: 0 0 40px rgba(0,232,91,0.3); }
 50% { box-shadow: 0 0 60px rgba(0,232,91,0.5); }
@@ -337,7 +337,7 @@ font-size: 15px; color: var(--green); font-weight: 600;
 
 .hub-center { animation: pulse 2.5s ease-in-out infinite; }
 
-/* ââ Background decorative elements ââ */
+/* ── Background decorative elements ── */
 .bg-glow {
 position: fixed; border-radius: 50%; filter: blur(120px);
 pointer-events: none; z-index: -1;
@@ -399,7 +399,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="slide-inner">
 <div class="section-label reveal">The Big Picture</div>
 <div class="section-title reveal d1">Millions of containers.<br>Arriving every year.<br><span style="color:var(--green)">They all need moving.</span></div>
-<div class="body-text reveal d2">Every year, millions of shipping containers arrive at UK ports carrying everything from electronics to furniture to food. But a container sitting on a ship is useless â it needs to get from the port to a warehouse, factory, or distribution centre. And once it's been emptied, it needs to go back.</div>
+<div class="body-text reveal d2">Every year, millions of shipping containers arrive at UK ports carrying everything from electronics to furniture to food. But a container sitting on a ship is useless — it needs to get from the port to a warehouse, factory, or distribution centre. And once it's been emptied, it needs to go back.</div>
 </div>
 </div>
 
@@ -421,7 +421,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="big-label">Parties involved in<br>every single move</div>
 </div>
 </div>
-<div class="body-text reveal d4" style="margin-top: 32px;">This is <span class="highlight">container transport</span> â the road haulage that connects global ocean shipping to the local supply chain.</div>
+<div class="body-text reveal d4" style="margin-top: 32px;">This is <span class="highlight">container transport</span> — the road haulage that connects global ocean shipping to the local supply chain.</div>
 </div>
 </div>
 
@@ -458,14 +458,14 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="section-subtitle reveal d1" style="margin-bottom:24px; font-size:16px;">Every container job is either an <span class="highlight-green">import</span> or an <span class="highlight-amber">export</span>. This is the first thing to know on any job.</div>
 <div class="compare-row">
 <div class="compare-card import reveal d2">
-<div class="compare-title" style="color:var(--green);">ð¥ Import</div>
+<div class="compare-title" style="color:var(--green);">📥 Import</div>
 <div class="compare-row-item"><span class="compare-label">What's happening</span><span class="compare-value highlight-green">Goods arriving into UK</span></div>
 <div class="compare-row-item"><span class="compare-label">Container starts</span><span class="compare-value">Loaded at port</span></div>
 <div class="compare-row-item"><span class="compare-label">Container ends</span><span class="compare-value">Empty back to port/depot</span></div>
 <div class="compare-row-item"><span class="compare-label">UK prevalence</span><span class="compare-value highlight-green">Most common</span></div>
 </div>
 <div class="compare-card export reveal d3">
-<div class="compare-title" style="color:var(--amber);">ð¤ Export</div>
+<div class="compare-title" style="color:var(--amber);">📤 Export</div>
 <div class="compare-row-item"><span class="compare-label">What's happening</span><span class="compare-value highlight-amber">Goods leaving UK</span></div>
 <div class="compare-row-item"><span class="compare-label">Container starts</span><span class="compare-value">Empty from port/depot</span></div>
 <div class="compare-row-item"><span class="compare-label">Container ends</span><span class="compare-value">Loaded to port</span></div>
@@ -483,13 +483,13 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="body-text reveal d1" style="font-size:16px; margin-bottom:24px;">Import and export are mirror images. Every container job has exactly 3 addresses.</div>
 <div class="compare-row">
 <div class="compare-card import reveal d2" style="width:300px;">
-<div class="compare-title" style="color:var(--green); font-size:16px;">ð¥ Import Order</div>
+<div class="compare-title" style="color:var(--green); font-size:16px;">📥 Import Order</div>
 <div class="compare-row-item"><span class="compare-label">Address 1</span><span class="compare-value" style="font-size:13px;">Port (collect loaded)</span></div>
 <div class="compare-row-item"><span class="compare-label">Address 2</span><span class="compare-value" style="font-size:13px;">Customer (deliver & unload)</span></div>
 <div class="compare-row-item"><span class="compare-label">Address 3</span><span class="compare-value" style="font-size:13px;">Port/Depot (return empty)</span></div>
 </div>
 <div class="compare-card export reveal d3" style="width:300px;">
-<div class="compare-title" style="color:var(--amber); font-size:16px;">ð¤ Export Order</div>
+<div class="compare-title" style="color:var(--amber); font-size:16px;">📤 Export Order</div>
 <div class="compare-row-item"><span class="compare-label">Address 1</span><span class="compare-value" style="font-size:13px;">Port/Depot (collect empty)</span></div>
 <div class="compare-row-item"><span class="compare-label">Address 2</span><span class="compare-value" style="font-size:13px;">Customer (load goods)</span></div>
 <div class="compare-row-item"><span class="compare-label">Address 3</span><span class="compare-value" style="font-size:13px;">Port (deliver loaded)</span></div>
@@ -517,7 +517,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="step-card reveal d2">
 <div class="step-num">2</div>
 <div class="step-label">Customs & Release</div>
-<div class="step-desc">Container cleared and released â monitored via Destin8</div>
+<div class="step-desc">Container cleared and released — monitored via Destin8</div>
 </div>
 <div class="step-card reveal d3">
 <div class="step-num">3</div>
@@ -527,7 +527,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="step-card reveal d4">
 <div class="step-num">4</div>
 <div class="step-label">Delivery</div>
-<div class="step-desc">Container driven to customer â live-unloaded or dropped on site</div>
+<div class="step-desc">Container driven to customer — live-unloaded or dropped on site</div>
 </div>
 <div class="step-card reveal d5">
 <div class="step-num">5</div>
@@ -537,7 +537,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 </div>
 <div class="reveal d5" style="margin-top: 28px;">
 <div class="callout-green">
-<span>The entire import cycle typically takes <strong>1â3 days</strong> from port collection to empty return</span>
+<span>The entire import cycle typically takes <strong>1–3 days</strong> from port collection to empty return</span>
 </div>
 </div>
 </div>
@@ -554,7 +554,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14a10 10 0 0120 0" stroke="#00E85B" stroke-width="2" fill="none"/><path d="M24 14a10 10 0 01-20 0" stroke="#00E85B" stroke-width="2" fill="none" stroke-dasharray="4 3"/><path d="M18 10l6 4-6 4" stroke="#00E85B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </div>
 <div style="font-size:15px; font-weight:700; color:var(--white); margin-bottom:6px;">Drop and Swap</div>
-<div style="font-size:12px; color:var(--dark-grey); line-height:1.5;">Continuous rotation at high-volume sites â drop loaded, pick up empty in a loop. Maximises driver productivity.</div>
+<div style="font-size:12px; color:var(--dark-grey); line-height:1.5;">Continuous rotation at high-volume sites — drop loaded, pick up empty in a loop. Maximises driver productivity.</div>
 </div>
 <div class="stat-card reveal d3" style="width:220px; text-align:left;">
 <div style="margin-bottom:8px;">
@@ -568,7 +568,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 8h8v12H4z" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M16 8h8v12h-8z" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M12 14h4" stroke="#00E85B" stroke-width="2" stroke-dasharray="2 2"/></svg>
 </div>
 <div style="font-size:15px; font-weight:700; color:var(--white); margin-bottom:6px;">Leg Splits</div>
-<div style="font-size:12px; color:var(--dark-grey); line-height:1.5;">Multi-day movements â deliver to customer, overnight at depot, return empty next day. Needs careful planning.</div>
+<div style="font-size:12px; color:var(--dark-grey); line-height:1.5;">Multi-day movements — deliver to customer, overnight at depot, return empty next day. Needs careful planning.</div>
 </div>
 <div class="stat-card reveal d5" style="width:220px; text-align:left;">
 <div style="margin-bottom:8px;">
@@ -589,27 +589,27 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="section-subtitle reveal d1" style="margin-bottom:20px; font-size:14px;">Container transport has more moving parts than almost any other road freight operation.</div>
 <div class="stats-row">
 <div class="stat-card reveal d2" style="width:180px; text-align:left;">
-<div style="font-size:24px; margin-bottom:6px;">â°</div>
+<div style="font-size:24px; margin-bottom:6px;">⏰</div>
 <div style="font-size:14px; font-weight:700; color:var(--red); margin-bottom:4px;">Demurrage</div>
-<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Container sits at port beyond free days â Â£75âÂ£150/day charges from the terminal.</div>
+<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Container sits at port beyond free days — £75–£150/day charges from the terminal.</div>
 </div>
 <div class="stat-card reveal d3" style="width:180px; text-align:left;">
-<div style="font-size:24px; margin-bottom:6px;">ð¦</div>
+<div style="font-size:24px; margin-bottom:6px;">📦</div>
 <div style="font-size:14px; font-weight:700; color:var(--red); margin-bottom:4px;">Detention</div>
-<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Container held off-terminal past the return deadline â charges from the shipping line.</div>
+<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Container held off-terminal past the return deadline — charges from the shipping line.</div>
 </div>
 <div class="stat-card reveal d3" style="width:180px; text-align:left;">
-<div style="font-size:24px; margin-bottom:6px;">ð¢</div>
+<div style="font-size:24px; margin-bottom:6px;">🚢</div>
 <div style="font-size:14px; font-weight:700; color:var(--amber); margin-bottom:4px;">Vessel Delays</div>
-<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Ship arrives late â all downstream haulage, warehouse bookings, and deliveries need replanning.</div>
+<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Ship arrives late — all downstream haulage, warehouse bookings, and deliveries need replanning.</div>
 </div>
 <div class="stat-card reveal d4" style="width:180px; text-align:left;">
-<div style="font-size:24px; margin-bottom:6px;">ð</div>
+<div style="font-size:24px; margin-bottom:6px;">📋</div>
 <div style="font-size:14px; font-weight:700; color:var(--amber); margin-bottom:4px;">Customs Holds</div>
-<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Container not cleared â driver arrives at port and can't collect. Wasted journey and VBS slot.</div>
+<div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Container not cleared — driver arrives at port and can't collect. Wasted journey and VBS slot.</div>
 </div>
 <div class="stat-card reveal d5" style="width:180px; text-align:left;">
-<div style="font-size:24px; margin-bottom:6px;">ð</div>
+<div style="font-size:24px; margin-bottom:6px;">🔗</div>
 <div style="font-size:14px; font-weight:700; color:var(--amber); margin-bottom:4px;">Multi-Party</div>
 <div style="font-size:11px; color:var(--dark-grey); line-height:1.4;">Shipping lines, port terminals, customs, hauliers, and customers all need to be in sync.</div>
 </div>
@@ -624,27 +624,27 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="section-title reveal d1" style="font-size:38px;">Who's Involved?</div>
 <div class="network-grid reveal d2" style="grid-template-columns: repeat(3, 1fr); gap:12px;">
 <div class="network-card">
-<div class="network-name">ð¢ Shipping Lines</div>
+<div class="network-name">🚢 Shipping Lines</div>
 <div class="network-detail">Own the containers and operate vessels. Maersk, MSC, CMA CGM, Hapag-Lloyd, COSCO, ONE, Evergreen.</div>
 </div>
 <div class="network-card">
-<div class="network-name">ðï¸ Port Terminals</div>
-<div class="network-detail">Operate port infrastructure â unloading vessels, managing the yard, and collection/delivery via VBS.</div>
+<div class="network-name">🏗️ Port Terminals</div>
+<div class="network-detail">Operate port infrastructure — unloading vessels, managing the yard, and collection/delivery via VBS.</div>
 </div>
 <div class="network-card">
-<div class="network-name">ð Container Hauliers</div>
+<div class="network-name">🚛 Container Hauliers</div>
 <div class="network-detail">Trucking companies that physically move containers on the road. From owner-drivers to large fleets.</div>
 </div>
 <div class="network-card">
-<div class="network-name">ð Freight Forwarders</div>
-<div class="network-detail">Arrange the end-to-end journey â booking ocean freight, customs, and road haulage. Often subcontract the road leg.</div>
+<div class="network-name">📋 Freight Forwarders</div>
+<div class="network-detail">Arrange the end-to-end journey — booking ocean freight, customs, and road haulage. Often subcontract the road leg.</div>
 </div>
 <div class="network-card">
-<div class="network-name">ð Customs Brokers</div>
+<div class="network-name">🛃 Customs Brokers</div>
 <div class="network-detail">Handle import/export declarations. UK uses CHIEF and CDS systems; Ireland uses AIS/AEP.</div>
 </div>
 <div class="network-card">
-<div class="network-name">ð¦ Shippers / Consignees</div>
+<div class="network-name">📦 Shippers / Consignees</div>
 <div class="network-detail">The businesses sending or receiving the goods inside the container.</div>
 </div>
 </div>
@@ -656,19 +656,19 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="slide-inner">
 <div class="section-label reveal">Systems</div>
 <div class="section-title reveal d1" style="font-size:36px; margin-bottom:8px;">Key Systems & Integrations</div>
-<div class="section-subtitle reveal d1" style="margin-bottom:20px; font-size:14px;">UK planners currently keep multiple browser tabs open â Destin8, VBS portals, shipping line websites â all at once.</div>
+<div class="section-subtitle reveal d1" style="margin-bottom:20px; font-size:14px;">UK planners currently keep multiple browser tabs open — Destin8, VBS portals, shipping line websites — all at once.</div>
 <div class="stats-row">
 <div class="stat-card reveal d2" style="width:200px; text-align:left;">
 <div style="font-size:14px; font-weight:700; color:var(--green); margin-bottom:4px;">Destin8</div>
-<div style="font-size:12px; color:var(--dark-grey); line-height:1.4;">Container status â customs clearance, release, and arrival across 317 berths and 94 border locations.</div>
+<div style="font-size:12px; color:var(--dark-grey); line-height:1.4;">Container status — customs clearance, release, and arrival across 317 berths and 94 border locations.</div>
 </div>
 <div class="stat-card reveal d3" style="width:200px; text-align:left;">
 <div style="font-size:14px; font-weight:700; color:var(--green); margin-bottom:4px;">VBS</div>
-<div style="font-size:12px; color:var(--dark-grey); line-height:1.4;">Vehicle Booking System â hauliers must book a time slot to collect or deliver at terminals.</div>
+<div style="font-size:12px; color:var(--dark-grey); line-height:1.4;">Vehicle Booking System — hauliers must book a time slot to collect or deliver at terminals.</div>
 </div>
 <div class="stat-card reveal d4" style="width:200px; text-align:left;">
 <div style="font-size:14px; font-weight:700; color:var(--green); margin-bottom:4px;">Shipping Line Portals</div>
-<div style="font-size:12px; color:var(--dark-grey); line-height:1.4;">Maersk MATS, MSC, OOCL, COSCO, ONE, Evergreen â tracking and container releases.</div>
+<div style="font-size:12px; color:var(--dark-grey); line-height:1.4;">Maersk MATS, MSC, OOCL, COSCO, ONE, Evergreen — tracking and container releases.</div>
 </div>
 <div class="stat-card reveal d5" style="width:200px; text-align:left;">
 <div style="font-size:14px; font-weight:700; color:var(--green); margin-bottom:4px;">ETSF & Customs</div>
@@ -691,7 +691,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="network-grid reveal d2" style="grid-template-columns: repeat(3, 1fr); gap:12px;">
 <div class="network-card">
 <div class="network-name">Felixstowe</div>
-<div class="network-detail">UK's busiest â ~40% of all UK container traffic. Landguard & Trinity terminals. Operated by Hutchison Ports.</div>
+<div class="network-detail">UK's busiest — ~40% of all UK container traffic. Landguard & Trinity terminals. Operated by Hutchison Ports.</div>
 </div>
 <div class="network-card">
 <div class="network-name">London Gateway</div>
@@ -707,14 +707,14 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 </div>
 <div class="network-card">
 <div class="network-name">Liverpool</div>
-<div class="network-detail">Peel Ports' Liverpool2 terminal â serves North of England and Midlands, reducing long road hauls from the South East.</div>
+<div class="network-detail">Peel Ports' Liverpool2 terminal — serves North of England and Midlands, reducing long road hauls from the South East.</div>
 </div>
 <div class="network-card">
 <div class="network-name">Regional</div>
-<div class="network-detail">Bristol, Teesport, Grangemouth â serving specific trade lanes and local industry in SW, NE, and Scotland.</div>
+<div class="network-detail">Bristol, Teesport, Grangemouth — serving specific trade lanes and local industry in SW, NE, and Scotland.</div>
 </div>
 </div>
-<div class="body-text reveal d3" style="margin-top:16px; font-size:15px;">Many Qargo customers â TES, Stateline, On-Time Logistics â operate daily out of these ports.</div>
+<div class="body-text reveal d3" style="margin-top:16px; font-size:15px;">Many Qargo customers — TES, Stateline, On-Time Logistics — operate daily out of these ports.</div>
 </div>
 </div>
 
@@ -723,17 +723,17 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="slide-inner">
 <div class="section-label reveal">Qargo's Role</div>
 <div class="section-title reveal d1" style="font-size:34px; margin-bottom:6px;">The Operating System for<br><span style="color:var(--green)">Container Hauliers</span></div>
-<div class="section-subtitle reveal d1" style="margin-bottom:18px; font-size:14px;">End-to-end management â from vessel arrival to empty return.</div>
+<div class="section-subtitle reveal d1" style="margin-bottom:18px; font-size:14px;">End-to-end management — from vessel arrival to empty return.</div>
 <div class="cap-grid reveal d2">
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M9 10h10M9 14h10M9 18h6" stroke="#00E85B" stroke-width="1.5" stroke-linecap="round"/></svg></div>
 <div class="cap-name">3-Address Orders</div>
-<div class="cap-desc">Native import/export container workflow â port, customer, empty return â with correct address typing.</div>
+<div class="cap-desc">Native import/export container workflow — port, customer, empty return — with correct address typing.</div>
 </div>
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M8 14h12M14 8v12" stroke="#00E85B" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="14" r="10" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/></svg></div>
 <div class="cap-name">Destin8 Integration</div>
-<div class="cap-desc">Live container status inside Qargo â customs cleared, released, arrived. No more tab switching.</div>
+<div class="cap-desc">Live container status inside Qargo — customs cleared, released, arrived. No more tab switching.</div>
 </div>
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="14" rx="2" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M10 22h8" stroke="#00E85B" stroke-width="2" stroke-linecap="round"/><path d="M14 18v4" stroke="#00E85B" stroke-width="2"/></svg></div>
@@ -748,7 +748,7 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 14h4l3-6 4 12 3-6h4" stroke="#00E85B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 <div class="cap-name">AI Order Entry</div>
-<div class="cap-desc">Create orders from scanned emails and PDFs â no more manual re-keying.</div>
+<div class="cap-desc">Create orders from scanned emails and PDFs — no more manual re-keying.</div>
 </div>
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M8 14c3-4 9-4 12 0" stroke="#00E85B" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="14" r="2" fill="#00E85B"/></svg></div>
@@ -758,9 +758,152 @@ opacity: 0.03; z-index: -1; pointer-events: none;
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="6" y="4" width="16" height="20" rx="2" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M10 12l3 3 5-5" stroke="#00E85B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 <div class="cap-name">Proof of Delivery</div>
-<div class="cap-desc">Digital PODs with photos and signatures â critical for interchange and damage disputes.</div>
+<div class="cap-desc">Digital PODs with photos and signatures — critical for interchange and damage disputes.</div>
 </div>
 <div class="cap-card">
 <div class="cap-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><circle cx="14" cy="14" r="4" stroke="#00E85B" stroke-width="1.5"/><path d="M14 4v4M14 20v4M4 14h4M20 14h4" stroke="#00E85B" stroke-width="1.5" stroke-linecap="round"/></svg></div>
 <div class="cap-name">Qargo Network</div>
-<div class="cap-desc">Collaborate with other Qargo users at the same port â	B6&Rv÷&²æB6ö÷&FæFR÷W&Föç2ãÂöFcà£ÂöFcà£ÂöFcà£ÂöFcà£ÂöFcà £ÂÒÒ4ÄDRC¢vÆ÷76'ÒÓà£ÆFb6Æ73Ò'6ÆFR"FFÖGW&FöãÒ##à£ÆFb6Æ73Ò'6ÆFRÖææW"#à£ÆFb6Æ73Ò'6V7FöâÖÆ&VÂ&WfVÂ#å&VfW&Væ6SÂöFcà£ÆFb6Æ73Ò'6V7Föâ×FFÆR&WfVÂC"7GÆSÒ&föçB×6¦S£3G²Ö&vâÖ&÷GFöÓ£#²#ä¶WFW&×2÷RvÆÂV#ÂöFcà£ÆFb6Æ73Ò&vÆ÷76'Öw&B&WfVÂC"#à£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#åDURòdUSÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#åGvVçGÖfö÷Bòf÷'GÖfö÷BWVfÆVçBVæB(	BFR7FæF&B6öçFæW"6¦RÖV7W&W2ãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#äFV×W'&vSÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#å÷'BFW&ÖæÂ6&vW2vVâ6öçFæW"7F2âFR&B&WöæBg&VR7F÷&vRãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#äFWFVçFöãÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#å6ærÆæR6&vW2vVâ6öçFæW"2VÆBöfb×FW&ÖæÂ&WöæBg&VRFÖRãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#äFW7FãÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#åT²ÆFf÷&Ò6÷vær7W7Fö×26ÆV&æ6RæB6öçFæW"&VÆV6R7FGW2BÆÂÖ¦÷"÷'G2ãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#åd%3ÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#åfV6ÆR&öö¶ær77FVÒ(	BFR÷'Bw26Æ÷B&öö¶ær77FVÒf÷"6öÆÆV7Föç2æBFVÆfW&W2ãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#äUE4cÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#äV×G6öçFæW"7F÷&vRf6ÆG(	Böfb×÷'BFW÷G2Æ¶RVçFÇfW"f÷"V×G&WGW&ç2ãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#å6¶VÆWFÂG&ÆW#ÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#äÆvGvVvB6762G&ÆW"FW6væVB7V6f6ÆÇFò6''6ær6öçFæW'2ãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#äFW7GVfcÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#åVæÆöFær6öçFæW"Bv&V÷W6R(	BÇ6ò6ÆÆVB'7G&ær"÷"&FWfææær"ãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#äG&÷æB7vÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#äÆVfRÆöFVB6öçFæW"Â6²WV×GâöæRG&(	BÖÖ6W2G&fW"WFÆ6FöâãÂöFcãÂöFcà£ÆFb6Æ73Ò&vÆ÷76'ÖFVÒ#ãÆFb6Æ73Ò&vÆ÷76'×FW&Ò#å&VVfW#ÂöFcãÆFb6Æ73Ò&vÆ÷76'ÖFVb#åFV×W&GW&RÖ6öçG&öÆÆVB&Vg&vW&FVB6öçFæW"f÷"W&6&ÆRvööG2ãÂöFcãÂöFcà£ÂöFcà£ÂöFcà£ÂöFcà £ÂÒÒ4ÄDRS¢&V6òVæBÒÓà£ÆFb6Æ73Ò'6ÆFR"FFÖGW&FöãÒ#c#à£ÆFb6Æ73Ò'6ÆFRÖææW"#à£ÆFb6Æ73Ò'&WfVÂ"7GÆSÒ&Ö&vâÖ&÷GFöÓ£#G²#à£Ç7frvGFÒ#cB"VvCÒ#cB"fWt&÷Ò#cBcB"fÆÃÒ&æöæR"ÖÆç3Ò&GG¢ò÷wwrçs2æ÷&ró#÷7fr#à£Æ6&6ÆR7Ò#3""7Ò#3""#Ò##"7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#2"fÆÃÒ'&v&Ã#3"ÃÃã"óà£ÇFCÒ$Ó#3&ÃbÓb"7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#B"7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"óà£Â÷7fsà£ÂöFcà£ÆFb6Æ73Ò&W&ò×FFÆR&WfVÂC"7GÆSÒ&föçB×6¦S£C²#åvVÆ6öÖRFòÇ7â6Æ73Ò&66VçB#å&vóÂ÷7ããÂöFcà£ÆFb6Æ73Ò'6V7Föâ×7V'FFÆR&WfVÂC""7GÆSÒ&Ö&vâÖ&÷GFöÓ£'²#å÷Rw&RvöærFòFòw&VBFæw2W&RãÂöFcà£ÆFb6Æ73Ò&&öG×FWB&WfVÂC""7GÆSÒ&Ö&vâÖ&÷GFöÓ£#²föçB×6¦S£G²Ö×vGF£s²Ö&vâÖÆVgC¦WFó²Ö&vâ×&vC¦WFó²ÆæRÖVvC£ãc²#ä6öçFæW"G&ç7÷'B2FR&öBVÆvRöb7FæF&F6VB6ær6öçFæW'2&WGvVVâ÷'G2ÂFW÷G2Âv&V÷W6W2ÂæB7W7FöÖW"6FW2(	B÷&6W7G&FærfW76VÂ'&fÇ2Â7W7Fö×26ÆV&æ6RÂ÷'B&öö¶æw2ÂæBFVÆfW'væF÷w2â&vòVÇ26öçFæW"VÆW'2'VâF2VçF&R÷W&Föâg&öÒ6ævÆRÆFf÷&ÒãÂöFcà£ÆFb6Æ73Ò'7FG2×&÷r&WfVÂC2#à£ÆFb6Æ73Ò'7FBÖ6&B#à£ÆFb7GÆSÒ&Ö&vâÖ&÷GFöÓ£g²#à£Ç7frvGFÒ##B"VvCÒ##B"fWt&÷Ò##B#B"fÆÃÒ&æöæR#ãÇ&V7BÒ#2"Ò#b"vGFÒ#"VvCÒ#""'Ò#""7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#""fÆÃÒ'&v&Ã#3"ÃÃã"óãÇFCÒ$Ógc$ÓRgc""7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#"÷6GÒ#ãR"óãÂ÷7fsà£ÂöFcà£ÆFb7GÆSÒ&föçB×6¦S£G²föçB×vVvC£c²6öÆ÷#§f"Ò×vFR²#ã2ÖFG&W72÷&FW'3ÂöFcà£ÆFb7GÆSÒ&föçB×6¦S£'²6öÆ÷#§f"ÒÖF&²Öw&W²#ç÷'BÂ7W7FöÖW"ÂV×G&WGW&ãÂöFcà£ÂöFcà£ÆFb6Æ73Ò'7FBÖ6&B#à£ÆFb7GÆSÒ&Ö&vâÖ&÷GFöÓ£g²#à£Ç7frvGFÒ##B"VvCÒ##B"fWt&÷Ò##B#B"fÆÃÒ&æöæR#ãÇFCÒ$Ó"'c#Ó"&#"7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#""7G&ö¶RÖÆæV6Ò'&÷VæB"óãÆ6&6ÆR7Ò#""7Ò#""#Ò#R"7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#ãR"fÆÃÒ'&v&Ã#3"ÃÃã"óãÂ÷7fsà£ÂöFcà£ÆFb7GÆSÒ&föçB×6¦S£G²föçB×vVvC£c²6öÆ÷#§f"Ò×vFR²#äöæR67&VVãÂöFcà£ÆFb7GÆSÒ&föçB×6¦S£'²6öÆ÷#§f"ÒÖF&²Öw&W²#äFW7FãÂd%2Â6ærÆæW3ÂöFcà£ÂöFcà£ÆFb6Æ73Ò'7FBÖ6&B#à£ÆFb7GÆSÒ&Ö&vâÖ&÷GFöÓ£g²#à£Ç7frvGFÒ##B"VvCÒ##B"fWt&÷Ò##B#B"fÆÃÒ&æöæR#ãÇFCÒ$ÓB#Ã"bb#"B"7G&ö¶SÒ"3ST""7G&ö¶R×vGFÒ#"ãR"7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"óãÂ÷7fsà£ÂöFcà£ÆFb7GÆSÒ&föçB×6¦S£G²föçB×vVvC£c²6öÆ÷#§f"Ò×vFR²#å&vò÷vW'3ÂöFcà£ÆFb7GÆSÒ&föçB×6¦S£'²6öÆ÷#§f"ÒÖF&²Öw&W²#çFR6öçFæW"VÆW"w2÷W&Föç3ÂöFcà£ÂöFcà£ÂöFcà£ÂöFcà£ÂöFcà £ÂöFcà £ÂÒÒ6öçG&öÇ2ÒÓà£ÆFbCÒ&6öçG&öÇ2#à£Æ'WGFöâCÒ'&WbÖ'Fâ"FFÆSÒ%&Wf÷W2#âb3ccC³Âö'WGFöãà£Æ'WGFöâCÒ'ÆÖ'Fâ"FFÆSÒ%ÆõW6R"6Æ73Ò&7FfR#âb3#³Âö'WGFöãà£Æ'WGFöâCÒ&æWBÖ'Fâ"FFÆSÒ$æWB#âb3cSC³Âö'WGFöãà£ÆFbCÒ'6ÆFRÖ6÷VçFW"#ãòSÂöFcà£ÂöFcà £Ç67&Cà¦6öç7B6ÆFW2ÒFö7VÖVçBçVW'6VÆV7F÷$ÆÂrç6ÆFRr°¦6öç7B&öw&W74&"ÒFö7VÖVçBævWDVÆVÖVçD'Bw&öw&W72Ö&"r°¦6öç7B6÷VçFW"ÒFö7VÖVçBævWDVÆVÖVçD'Bw6ÆFRÖ6÷VçFW"r°¦6öç7BÆ'FâÒFö7VÖVçBævWDVÆVÖVçD'BwÆÖ'Fâr°¦ÆWB7W'&VçBÒ°¦ÆWBÆærÒG'VS°¦ÆWBFÖW"ÒçVÆÃ° ¦gVæ7Föâ6÷u6ÆFRæFW°§6ÆFW2æf÷$V62Óâ2æ6Æ74Æ7Bç&VÖ÷fRv7FfRr°§6ÆFW5¶æFWÒæ6Æ74Æ7BæFBv7FfRr°§&öw&W74&"ç7GÆRçvGFÒæFW²ò6ÆFW2æÆVæwF¢²rRs°¦6÷VçFW"çFWD6öçFVçBÒæFW²²ròr²6ÆFW2æÆVæwF°¦7W'&VçBÒæFW°§Ð ¦gVæ7FöâæWB°¦b7W'&VçBÂ6ÆFW2æÆVæwFÒ°§6÷u6ÆFR7W'&VçB²°§66VGVÆTæWB°§ÒVÇ6R°§ÆærÒfÇ6S°§Æ'FâçFWD6öçFVçBÒuÇS#T#bs°§Æ'Fâæ6Æ74Æ7Bç&VÖ÷fRv7FfRr°¦6ÆV%FÖV÷WBFÖW"°§Ð§Ð ¦gVæ7Föâ&Wb°¦b7W'&VçBâ°§6÷u6ÆFR7W'&VçBÒ°¦bÆær66VGVÆTæWB°§Ð§Ð ¦gVæ7Föâ66VGVÆTæWB°¦6ÆV%FÖV÷WBFÖW"°¦bÆær&WGW&ã°¦6öç7BGW&FöâÒ'6TçB6ÆFW5¶7W'&VçEÒæFF6WBæGW&FöâÇÂS°§FÖW"Ò6WEFÖV÷WBæWBÂGW&Föâ°§Ð ¦gVæ7FöâFövvÆUÆ°§ÆærÒÆæs°§Æ'FâçFWD6öçFVçBÒÆæròuÇS#4cr¢uÇS#T#bs°§ÆæròÆ'Fâæ6Æ74Æ7BæFBv7FfRr¢Æ'Fâæ6Æ74Æ7Bç&VÖ÷fRv7FfRr°¦bÆær°¦b7W'&VçBÓÓÒ6ÆFW2æÆVæwFÒ6÷u6ÆFR°§66VGVÆTæWB°§ÒVÇ6R°¦6ÆV%FÖV÷WBFÖW"°§Ð§Ð ¦Fö7VÖVçBævWDVÆVÖVçD'BvæWBÖ'FâræFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ²æWB²Ò°¦Fö7VÖVçBævWDVÆVÖVçD'Bw&WbÖ'FâræFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ²&Wb²Ò°§Æ'FâæFDWfVçDÆ7FVæW"v6Æ6²rÂFövvÆUÆ° ¦Fö7VÖVçBæFDWfVçDÆ7FVæW"v¶WF÷vârÂRÓâ°¦bRæ¶WÓÓÒt'&÷u&vBrÇÂRæ¶WÓÓÒrr²Rç&WfVçDFVfVÇB²æWB²Ð¦bRæ¶WÓÓÒt'&÷tÆVgBr²Rç&WfVçDFVfVÇB²&Wb²Ð¦bRæ¶WÓÓÒwrFövvÆUÆ°§Ò° ¢òòWFò×7F'@§66VGVÆTæWB°£Â÷67&Cà£Âö&öGà£ÂöFÖÃà 
+<div class="cap-desc">Collaborate with other Qargo users at the same port — share work and coordinate operations.</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 14: Glossary -->
+<div class="slide" data-duration="8000">
+<div class="slide-inner">
+<div class="section-label reveal">Reference</div>
+<div class="section-title reveal d1" style="font-size:34px; margin-bottom:20px;">Key Terms You'll Hear</div>
+<div class="glossary-grid reveal d2">
+<div class="glossary-item"><div class="glossary-term">TEU / FEU</div><div class="glossary-def">Twenty-foot / Forty-foot Equivalent Unit — the standard container size measures.</div></div>
+<div class="glossary-item"><div class="glossary-term">Demurrage</div><div class="glossary-def">Port terminal charges when a container stays in the yard beyond free storage.</div></div>
+<div class="glossary-item"><div class="glossary-term">Detention</div><div class="glossary-def">Shipping line charges when a container is held off-terminal beyond free time.</div></div>
+<div class="glossary-item"><div class="glossary-term">Destin8</div><div class="glossary-def">UK platform showing customs clearance and container release status at all major ports.</div></div>
+<div class="glossary-item"><div class="glossary-term">VBS</div><div class="glossary-def">Vehicle Booking System — the port's slot booking system for collections and deliveries.</div></div>
+<div class="glossary-item"><div class="glossary-term">ETSF</div><div class="glossary-def">Empty Container Storage Facility — off-port depots like Pentalver for empty returns.</div></div>
+<div class="glossary-item"><div class="glossary-term">Skeletal Trailer</div><div class="glossary-def">Lightweight chassis trailer designed specifically to carry shipping containers.</div></div>
+<div class="glossary-item"><div class="glossary-term">Destuff</div><div class="glossary-def">Unloading a container at warehouse — also called "stripping" or "devanning".</div></div>
+<div class="glossary-item"><div class="glossary-term">Drop and Swap</div><div class="glossary-def">Leave loaded container, pick up empty in one trip — maximises driver utilisation.</div></div>
+<div class="glossary-item"><div class="glossary-term">Reefer</div><div class="glossary-def">Temperature-controlled (refrigerated) container for perishable goods.</div></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 15: Recap / End -->
+<div class="slide" data-duration="6000">
+<div class="slide-inner">
+<div class="reveal" style="margin-bottom:24px;">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" stroke="#00E85B" stroke-width="3" fill="rgba(0,232,91,0.1)"/>
+<path d="M20 32l8 8 16-16" stroke="#00E85B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="hero-title reveal d1" style="font-size:48px;">Welcome to <span class="accent">Qargo</span></div>
+<div class="section-subtitle reveal d2" style="margin-bottom:12px;">You're going to do great things here.</div>
+<div class="body-text reveal d2" style="margin-bottom:28px; font-size:14px; max-width:700px; margin-left:auto; margin-right:auto; line-height:1.6;">Container transport is the road haulage of standardised shipping containers between ports, depots, warehouses, and customer sites — orchestrating vessel arrivals, customs clearance, port bookings, and delivery windows. Qargo helps container hauliers run this entire operation from a single platform.</div>
+<div class="stats-row reveal d3">
+<div class="stat-card">
+<div style="margin-bottom:6px;">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/><path d="M9 6v12M15 6v12" stroke="#00E85B" stroke-width="1" opacity="0.5"/></svg>
+</div>
+<div style="font-size:14px; font-weight:600; color:var(--white);">3-address orders</div>
+<div style="font-size:12px; color:var(--dark-grey);">port, customer, empty return</div>
+</div>
+<div class="stat-card">
+<div style="margin-bottom:6px;">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#00E85B" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="5" stroke="#00E85B" stroke-width="1.5" fill="rgba(0,232,91,0.1)"/></svg>
+</div>
+<div style="font-size:14px; font-weight:600; color:var(--white);">One screen</div>
+<div style="font-size:12px; color:var(--dark-grey);">Destin8, VBS, shipping lines</div>
+</div>
+<div class="stat-card">
+<div style="margin-bottom:6px;">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 20L10 12 16 16 22 4" stroke="#00E85B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<div style="font-size:14px; font-weight:600; color:var(--white);">Qargo powers</div>
+<div style="font-size:12px; color:var(--dark-grey);">the container haulier's operations</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Controls -->
+<div id="controls">
+<button id="prev-btn" title="Previous">&#9664;</button>
+<button id="play-btn" title="Play/Pause" class="active">&#9208;</button>
+<button id="next-btn" title="Next">&#9654;</button>
+<div id="slide-counter">1 / 15</div>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const progressBar = document.getElementById('progress-bar');
+const counter = document.getElementById('slide-counter');
+const playBtn = document.getElementById('play-btn');
+let current = 0;
+let playing = true;
+let timer = null;
+
+function showSlide(index) {
+slides.forEach(s => s.classList.remove('active'));
+slides[index].classList.add('active');
+progressBar.style.width = ((index + 1) / slides.length * 100) + '%';
+counter.textContent = (index + 1) + ' / ' + slides.length;
+current = index;
+}
+
+function next() {
+if (current < slides.length - 1) {
+showSlide(current + 1);
+scheduleNext();
+} else {
+playing = false;
+playBtn.textContent = '\u25B6';
+playBtn.classList.remove('active');
+clearTimeout(timer);
+}
+}
+
+function prev() {
+if (current > 0) {
+showSlide(current - 1);
+if (playing) scheduleNext();
+}
+}
+
+function scheduleNext() {
+clearTimeout(timer);
+if (!playing) return;
+const duration = parseInt(slides[current].dataset.duration) || 5000;
+timer = setTimeout(next, duration);
+}
+
+function togglePlay() {
+playing = !playing;
+playBtn.textContent = playing ? '\u23F8' : '\u25B6';
+playing ? playBtn.classList.add('active') : playBtn.classList.remove('active');
+if (playing) {
+if (current === slides.length - 1) showSlide(0);
+scheduleNext();
+} else {
+clearTimeout(timer);
+}
+}
+
+document.getElementById('next-btn').addEventListener('click', () => { next(); });
+document.getElementById('prev-btn').addEventListener('click', () => { prev(); });
+playBtn.addEventListener('click', togglePlay);
+
+document.addEventListener('keydown', (e) => {
+if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+if (e.key === 'p') togglePlay();
+});
+
+// Auto-start
+scheduleNext();
+</script>
+</body>
+</html>
